@@ -5,126 +5,24 @@
 	Free for personal and commercial use under the CCA 3.0 license
 -->
 <html>
-	<head>
-		<title>ProblemManje.org</title>
-		<meta name="viewport" content="initial-scale=1.0, user-scalable=no" />
-		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
-		<meta name="description" content="" />
-		<meta name="keywords" content="baza problema, problemi, problem manje" />
-		<link href="http://fonts.googleapis.com/css?family=Signika:400,600&amp;subset=latin,latin-ext" rel="stylesheet" type="text/css">
-		<script src="js/jquery.min.js"></script>
-		<script src="js/jquery.dropotron.js"></script>
-		<script src="js/config.js"></script>
-		<script src="js/skel.min.js"></script>
-		<script src="js/skel-panels.min.js"></script>
-		<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyByZ_o2suWrlQj5Z4i8joLCCR2g5oNMzHQ&sensor=false"></script>
-		<noscript>
-			<link rel="stylesheet" href="css/skel-noscript.css" />
-			<link rel="stylesheet" href="css/style.css" />
-			<link rel="stylesheet" href="css/style-desktop.css" />
-		</noscript>
-		<!--[if lte IE 8]><script src="js/html5shiv.js"></script><link rel="stylesheet" href="css/ie8.css" /><![endif]-->
-
-		 <script>
-			function initialize() {
-			  var problem1Latlng = new google.maps.LatLng(44.79172,20.44883);
-			  var mapOptions = {
-				zoom: 14,
-				disableDefaultUI: true,
-				center: problem1Latlng,
-				mapTypeId: google.maps.MapTypeId.ROADMAP
-			  };
-			  var map = new google.maps.Map(document.getElementById('map1_canvas'), mapOptions);
-			  var contentString = '<div id="content">'+
-				  '<div id="siteNotice">'+
-				  '</div>'+
-				  '<h1 id="firstHeading" class="firstHeading">Slomljena klupa</h1>'+
-				  '<div id="bodyContent">'+
-				  '<p>Hyde park, Beograd' +
-				  '</p></div>'+
-				  '</div>';
-			  var infowindow = new google.maps.InfoWindow({
-				  content: contentString
-			  });
-			  var marker = new google.maps.Marker({
-				  position: problem1Latlng,
-				  map: map,
-				  title: 'Slomljena klupa, Hyde Park'
-			  });
-			  google.maps.event.addListener(marker, 'click', function() {
-				infowindow.open(map,marker);
-			  });
-			}
-			google.maps.event.addDomListener(window, 'load', initialize);
-		</script>
-		
-		 <script>
-			function initialize() {
-			  var problem2Latlng = new google.maps.LatLng(44.82056,20.46222);
-			  var mapOptions = {
-				zoom: 14,
-				disableDefaultUI: true,
-				center: problem2Latlng,
-				mapTypeId: google.maps.MapTypeId.ROADMAP
-			  };
-			  var map = new google.maps.Map(document.getElementById('map2_canvas'), mapOptions);
-			  var contentString = '<div id="content">'+
-				  '<div id="siteNotice">'+
-				  '</div>'+
-				  '<h1 id="firstHeading" class="firstHeading">Oštećen saobraćajni znak</h1>'+
-				  '<div id="bodyContent">'+
-				  '<p>Trg Marksa i Engelsa, Beograd' +
-				  '</p></div>'+
-				  '</div>';
-			  var infowindow = new google.maps.InfoWindow({
-				  content: contentString
-			  });
-			  var marker = new google.maps.Marker({
-				  position: problem2Latlng,
-				  map: map,
-				  title: 'Saobraćajni znak, Trg Marksa i Engelsa'
-			  });
-			  google.maps.event.addListener(marker, 'click', function() {
-				infowindow.open(map,marker);
-			  });
-			}
-			google.maps.event.addDomListener(window, 'load', initialize);
-		</script>		
-		
-		 <script>
-			function initialize() {
-			  var problem3Latlng = new google.maps.LatLng(44.82056,20.46222);
-			  var mapOptions = {
-				zoom: 14,
-				disableDefaultUI: true,
-				center: problem3Latlng,
-				mapTypeId: google.maps.MapTypeId.ROADMAP
-			  };
-			  var map = new google.maps.Map(document.getElementById('map3_canvas'), mapOptions);
-			  var contentString = '<div id="content">'+
-				  '<div id="siteNotice">'+
-				  '</div>'+
-				  '<h1 id="firstHeading" class="firstHeading">Gomila smeća</h1>'+
-				  '<div id="bodyContent">'+
-				  '<p>Požeška, Beograd' +
-				  '</p></div>'+
-				  '</div>';
-			  var infowindow = new google.maps.InfoWindow({
-				  content: contentString
-			  });
-			  var marker = new google.maps.Marker({
-				  position: problem3Latlng,
-				  map: map,
-				  title: 'Smeće, Požeška'
-			  });
-			  google.maps.event.addListener(marker, 'click', function() {
-				infowindow.open(map,marker);
-			  });
-			}
-			google.maps.event.addDomListener(window, 'load', initialize);
-		</script>				
-		
-	</head>
+<head>
+	<title>ProblemManje.org</title>
+	<meta name="viewport" content="initial-scale=1.0, user-scalable=no" />
+	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+	<meta name="description" content="" />
+	<meta name="keywords" content="baza problema, problemi, problem manje" />
+	<link href="http://fonts.googleapis.com/css?family=Signika:400,600&amp;subset=latin,latin-ext" rel="stylesheet" type="text/css">
+	<script src="js/jquery.min.js"></script>
+	<script src="js/jquery.dropotron.js"></script>
+	<script src="js/config.js"></script>
+	<script src="js/skel.min.js"></script>
+	<script src="js/skel-panels.min.js"></script>
+	<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyByZ_o2suWrlQj5Z4i8joLCCR2g5oNMzHQ&sensor=false"></script>
+	<link rel="stylesheet" href="css/skel-noscript.css" />
+	<link rel="stylesheet" href="css/style.css" />
+	<link rel="stylesheet" href="css/style-desktop.css" />
+	<!--[if lte IE 8]><script src="js/html5shiv.js"></script><link rel="stylesheet" href="css/ie8.css" /><![endif]-->
+</head>
 	<body class="homepage" onload="initialize()">
 		<!-- Heder Wrapper -->
 			<div id="header-wrapper">
@@ -144,17 +42,17 @@
 										<nav id="nav">
 											<ul>
 												<li class="current_page_item"><a href="index.php">Naslovna</a></li>
-												<li><a href="index.php#intro">O projektu</a></li>
+												<li><a href="#">O projektu</a></li>
 												<li>
-													<a href="index.php#najaktuelniji">Problemi</a>
+													<a href="#">Problemi</a>
 													<ul>
-														<li><a href="mapa-problema.php">Mapa</a></li>
-														<li><a href="index.php#">Tabela</a></li>
-														<li><a href="index.php#">Prijavi</a></li>
+														<li><a href="#">Mapa</a></li>
+														<li><a href="#">Tabela</a></li>
+														<li><a href="#">Prijavi</a></li>
 													</ul>
 												</li>
 												<li><a href="#">Android aplikacija</a></li>
-												<li><a href="index.php#kontaktinfo">Kontakt Info</a></li>
+												<li><a href="#">Kontakt Info</a></li>
 											</ul>
 										</nav>
 
