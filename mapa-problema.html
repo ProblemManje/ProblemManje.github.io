@@ -1,0 +1,137 @@
+<!DOCTYPE HTML>
+<!--
+	ProblemManje 1.0 by Bunch Of Bunnies
+	
+	Free for personal and commercial use under the CCA 3.0 license
+-->
+<html>
+	<head>
+		<title>ProblemManje.org</title>
+		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+		<meta name="description" content="" />
+		<meta name="keywords" content="baza problema, problemi, problem manje" />
+		<link href="http://fonts.googleapis.com/css?family=Signika:400,600&amp;subset=latin,latin-ext" rel="stylesheet" type="text/css">
+		<script src="js/jquery.min.js"></script>
+		<script src="js/jquery.dropotron.js"></script>
+		<script src="js/config.js"></script>
+		<script src="js/skel.min.js"></script>
+		<script src="js/skel-panels.min.js"></script>
+		<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAEbvGcgO9D_bWB_9auTDoRO3Z7GO6XENU&sensor=false"></script>
+		<noscript>
+			<link rel="stylesheet" href="css/skel-noscript.css" />
+			<link rel="stylesheet" href="css/style.css" />
+			<link rel="stylesheet" href="css/style-desktop.css" />
+		</noscript>
+		<!--[if lte IE 8]><script src="js/html5shiv.js"></script><link rel="stylesheet" href="css/ie8.css" /><![endif]-->
+	</head>
+	<body onload="initialize()" class="no-sidebar">
+
+		<!-- Heder Wrapper -->
+			<div id="header-wrapper" style="padding-bottom:1em;">
+				<div class="container">
+					<div class="row">
+						<div class="12u">
+						
+							<!-- Heder -->
+								<section id="header">
+									<!-- Logo -->
+										<img style="width:8%; height:8%; padding-bottom: 10px;" src="images/problemmanje.png" alt="" />
+										<h1 style="margin-top: -50px; color: white; text-shadow: 0 1px 0 #ccc, 0 2px 0 #c9c9c9, 0 3px 0 #bbb, 0 4px 0 #b9b9b9, 0 5px 0 #aaa, 0 6px 1px rgba(0,0,0,.1), 0 0 5px rgba(0,0,0,.1), 0 1px 3px rgba(0,0,0,.3), 0 3px 5px rgba(0,0,0,.2), 0 5px 10px rgba(0,0,0,.25), 0 10px 10px rgba(0,0,0,.2), 0 20px 20px rgba(0,0,0,.15);"><a href="index.php">ProblemManje.org</a></h1>
+									<!-- Navigacija -->
+										<nav id="nav">
+											<ul>
+												<li><a href="index.php">Naslovna</a></li>
+												<li><a href="index.php#intro">O projektu</a></li>
+												<li class="current_page_item">
+													<a href="index.php#najaktuelniji">Problemi</a>
+													<ul>
+														<li><a href="mapa-problema.php">Mapa</a></li>
+														<li><a href="index.php#">Tabela</a></li>
+														<li><a href="index.php#">Prijavi</a></li>
+													</ul>
+												</li>
+												<li><a href="#">Android aplikacija</a></li>
+												<li><a href="index.php#kontaktinfo">Kontakt Info</a></li>
+											</ul>
+										</nav>
+								</section>
+								<section>
+								<center>
+									<form>
+										<select class="lokacija" data-placeholder="Odaberi lokaciju ručno..." name="lokacija" id="lokacija" style="font-family: 'Signika',sans-serif; font-weight: 400; height: 48px; width:50%;" single class="chosen-select">
+											<option value="Beograd">Beograd</option>
+											<option value="Valjevo">Valjevo</option>
+											<option value="Zajecar">Zaječar</option>
+											<option value="Jagodina">Jagodina</option>
+											<option value="Kraljevo">Kraljevo</option>
+											<option value="Leskovac">Leskovac</option>
+											<option value="Nis">Niš</option>
+											<option value="NoviSad">Novi Sad</option>
+											<option value="Pozarevac">Požarevac</option>
+											<option value="Smederevo">Smederevo</option>
+											<option value="SremskaMitrovica">Sremska Mitrovica</option>
+											<option value="Uzice">Užice</option>
+											<option value="Sabac">Šabac</option>
+											<option value="Vranje">Vranje</option>
+											<option value="Zrenjanin">Zrenjanin</option>
+											<option value="Kragujevac">Kragujevac</option>
+											<option value="Krusevac">Kruševac</option>
+											<option value="Loznica">Loznica</option>
+											<option value="NoviPazar">Novi Pazar</option>
+											<option value="Pancevo">Pančevo</option>
+											<option value="Pristina">Priština</option>
+											<option value="Sombor">Sombor</option>
+											<option value="Subotica">Subotica</option>
+											<option value="Cacak">Čačak</option>
+										</select>
+									</form>
+								</section>
+								</center>
+						</div>
+					</div>
+				</div>
+			</div>
+		
+		<!-- Mapa problema korisnikove lokacije -->
+			<script type="text/javascript">
+			var markeri = [
+							['<div class="info_problema"><img class="slika_problema_na_mapi" src="http://www.emedjimurje.hr/uploads/20120826/DSC01460_1.JPG" alt=""><h1>Hyde Park</h1><prioritet>Prioritet: 1</prioritet><br><datum>Zabeleženo: 05. nov 2013.<datum></div>', 44.79172, 20.44883],
+							['<div class="info_problema"><img class="slika_problema_na_mapi" src="http://www.057info.hr/images/vijesti/orginal/znak__pristani_te_1273149660.JPG" alt=""><h1>Trg Marksa i Engelsa</h1><prioritet>Prioritet: 1</prioritet><br><datum>Zabeleženo: 05. nov 2013.<datum></div>', 44.82056, 20.46222],
+							['Francuska ulica', 44.81838, 20.46373],
+							['Vukov spomenik', 44.80306, 20.48556],
+							['BU', 44.81888, 20.45679],
+							['BU', 44.84674, 20.29879],
+						  ];
+
+			function initialize() {
+				var myOptions = {
+					zoom: 16,
+					disableDefaultUI: true,
+					mapTypeId: google.maps.MapTypeId.ROADMAP,
+					mapTypeControl: false
+				};
+				var map = new google.maps.Map(document.getElementById("map_canvas"),myOptions);
+				var infowindow = new google.maps.InfoWindow(); 
+				var marker, i;
+				var bounds = new google.maps.LatLngBounds();
+
+				for (i = 0; i < markeri.length; i++) { 
+					var pos = new google.maps.LatLng(markeri[i][1], markeri[i][2]);
+					bounds.extend(pos);
+					marker = new google.maps.Marker({
+						position: pos,
+						map: map
+					});
+					google.maps.event.addListener(marker, 'click', (function(marker, i) {
+						return function() {
+							infowindow.setContent(markeri[i][0]);
+							infowindow.open(map, marker);
+						}
+					})(marker, i));
+				}
+				map.fitBounds(bounds);
+			}
+			</script>
+		<div id="map_canvas" style="margin-top:-80px; width: auto; height: 36em; position: relative; margin: 0; padding:0;"></div>
+	</body>
+</html>
