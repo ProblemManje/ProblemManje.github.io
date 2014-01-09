@@ -6,7 +6,7 @@
 -->
 <html>
 	<head>
-		<title>ProblemManje.org</title>
+		<title>ProblemManje</title>
 		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
 		<meta name="description" content="" />
 		<meta name="keywords" content="baza problema, problemi, problem manje" />
@@ -26,73 +26,64 @@
 		<!--[if lte IE 8]><script src="js/html5shiv.js"></script><link rel="stylesheet" href="css/ie8.css" /><![endif]-->
 	</head>
 
-	<body onload="initialize()" class="no-sidebar">
+	<body onload="initialize()" class="no-sidebar" style="margin:0">
 
 		<!-- Heder Wrapper -->
-			<div id="header-wrapper" style="padding-bottom:1em;">
-				<div class="container">
-					<div class="row">
-						<div class="12u">
-						
-							<!-- Heder -->
-								<section id="header">
-									<!-- Logo -->
-										<img style="width:8%; height:8%; padding-bottom: 10px;" src="images/problemmanje.png" alt="" />
-										<h1 style="margin-top: -50px; color: white; text-shadow: 0 1px 0 #ccc, 0 2px 0 #c9c9c9, 0 3px 0 #bbb, 0 4px 0 #b9b9b9, 0 5px 0 #aaa, 0 6px 1px rgba(0,0,0,.1), 0 0 5px rgba(0,0,0,.1), 0 1px 3px rgba(0,0,0,.3), 0 3px 5px rgba(0,0,0,.2), 0 5px 10px rgba(0,0,0,.25), 0 10px 10px rgba(0,0,0,.2), 0 20px 20px rgba(0,0,0,.15);"><a href="index.html">ProblemManje</a></h1>
-									<!-- Navigacija -->
-										<nav id="nav">
-											<ul>
-												<li><a href="index.html#intro">O projektu</a></li>
-												<li class="current_page_item">
-													<a href="index.html#najaktuelniji">Problemi</a>
-													<ul>
-														<li><a href="problems-map.html">Mapa</a></li>
-														<li><a href="index.html#">Tabela</a></li>
-														<li><a href="index.html#">Prijavi</a></li>
-													</ul>
-												</li>
-												<li><a href="#">Android aplikacija</a></li>
-												<li><a href="index.html#kontaktinfo">Kontakt Info</a></li>
-											</ul>
-										</nav>
-								</section>
-								<section>
-								<center>
-									<form>
-										<select class="lokacija" data-placeholder="Odaberi lokaciju ručno..." name="lokacija" id="lokacija" style="font-family: 'Signika',sans-serif; font-weight: 400; font-size: 22px; height: 48px; width:50%;" single class="chosen-select">
-											<option value="Beograd">Beograd</option>
-											<option value="Valjevo">Valjevo</option>
-											<option value="Vranje">Vranje</option>
-											<option value="Zajecar">Zaječar</option>
-											<option value="Zrenjanin">Zrenjanin</option>
-											<option value="Jagodina">Jagodina</option>
-											<option value="Kragujevac">Kragujevac</option>
-											<option value="Kraljevo">Kraljevo</option>
-											<option value="Krusevac">Kruševac</option>											
-											<option value="Leskovac">Leskovac</option>
-											<option value="Loznica">Loznica</option>
-											<option value="Nis">Niš</option>
-											<option value="NoviSad">Novi Sad</option>
-											<option value="NoviPazar">Novi Pazar</option>
-											<option value="Pancevo">Pančevo</option>
-											<option value="Pozarevac">Požarevac</option>
-											<option value="Pristina">Priština</option>
-											<option value="Smederevo">Smederevo</option>
-											<option value="SremskaMitrovica">Sremska Mitrovica</option>
-											<option value="Sombor">Sombor</option>
-											<option value="Subotica">Subotica</option>
-											<option value="Uzice">Užice</option>
-											<option value="Cacak">Čačak</option>
-											<option value="Sabac">Šabac</option>
-										</select>
-									</form>
-								</section>
-								</center>
-						</div>
-					</div>
-				</div>
+		<div id="headerLogo">
+			<!-- Logo -->
+			<div id="logo" style="float:left; width: 100px; height: 86px;">				
+				<img style="width: 80%; margin: 6px;" src="images/problemmanje.png" alt="" />
 			</div>
-		
+			<div id="naslov" style="float:left; width: 216px; height: 86px;">
+				<h1 style="font-size: 24px; padding: 30px 0; margin-top: 0px; color: white; text-shadow: 0 1px 0 #ccc, 0 2px 0 #c9c9c9, 0 3px 0 #bbb, 0 4px 0 #b9b9b9, 0 5px 0 #aaa, 0 6px 1px rgba(0,0,0,.1), 0 0 5px rgba(0,0,0,.1), 0 1px 3px rgba(0,0,0,.3), 0 3px 5px rgba(0,0,0,.2), 0 5px 10px rgba(0,0,0,.25), 0 10px 10px rgba(0,0,0,.2), 0 20px 20px rgba(0,0,0,.15);"><a href="index.html">ProblemManje</a></h1>
+			</div>
+
+			<form id="city_selector">
+				<select class="lokacija" data-placeholder="Odaberi lokaciju ručno..." name="lokacija" id="lokacija" single class="chosen-select">
+					<option value="Beograd">Beograd</option>
+					<option value="Valjevo">Valjevo</option>
+					<option value="Vranje">Vranje</option>
+					<option value="Zajecar">Zaječar</option>
+					<option value="Zrenjanin">Zrenjanin</option>
+					<option value="Jagodina">Jagodina</option>
+					<option value="Kragujevac">Kragujevac</option>
+					<option value="Kraljevo">Kraljevo</option>
+					<option value="Krusevac">Kruševac</option>											
+					<option value="Leskovac">Leskovac</option>
+					<option value="Loznica">Loznica</option>
+					<option value="Nis">Niš</option>
+					<option value="NoviSad">Novi Sad</option>
+					<option value="NoviPazar">Novi Pazar</option>
+					<option value="Pancevo">Pančevo</option>
+					<option value="Pozarevac">Požarevac</option>
+					<option value="Pristina">Priština</option>
+					<option value="Smederevo">Smederevo</option>
+					<option value="SremskaMitrovica">Sremska Mitrovica</option>
+					<option value="Sombor">Sombor</option>
+					<option value="Subotica">Subotica</option>
+					<option value="Uzice">Užice</option>
+					<option value="Cacak">Čačak</option>
+					<option value="Sabac">Šabac</option>
+				</select>
+			</form>
+			<div id="map_header"></div>
+		</div>
+		<!-- Navigacija -->
+			<nav id="nav" style="display:none;">
+				<ul>
+					<li><a href="index.html#intro">O projektu</a></li>
+					<li>
+						<a href="index.html#najaktuelniji">Problemi</a>
+						<ul>
+							<li><a href="problems-map.html">Mapa</a></li>
+							<li><a href="index.html#">Tabela</a></li>
+							<li><a href="index.html#">Prijavi</a></li>
+						</ul>
+					</li>
+					<li><a href="#">Android aplikacija</a></li>
+					<li><a href="index.html#kontaktinfo">Kontakt Info</a></li>
+				</ul>
+			</nav>
 		<!-- Mapa problema korisnikove lokacije -->
 			<script type="text/javascript">
 			var markeri = [
@@ -131,11 +122,10 @@
 					})(marker, i));
 				}
 				map.fitBounds(bounds);
-				checkResize();
 			}
+			
 			</script>
-		<div id="map_header"></div>
-		<div id="map_canvas" style="margin-top:-80px; width: auto; height: 36em; position: relative; margin: 0; padding:0;"></div>
+		<div id="map_canvas" style="width: auto; height: 800px; position: relative; margin: 86px 0 0 0; padding:0;"></div>
 	</body>
 <script type="text/javascript"> $(document).ready(function() { $("html").niceScroll({cursoropacitymax:0.6, zindex:11000}); }); </script>
 </html>
